@@ -10,14 +10,15 @@ namespace Gameplay.Quiz
     {
         [SerializeField] private Button button;
         [SerializeField] private TMP_Text answerText;
-        [SerializeField] private AnimationSequence correctAnimation;
-        [SerializeField] private AnimationSequence incorrectAnimation;
-        [SerializeField] private AnimationSequence enableAnimation;
-        [SerializeField] private AnimationSequence disableAnimation;
+        [SerializeField] private AnimationSequencerController correctAnimation;
+        [SerializeField] private AnimationSequencerController incorrectAnimation;
+        [SerializeField] private AnimationSequencerController enableAnimation;
+        [SerializeField] private AnimationSequencerController disableAnimation;
         
         public event Action<AnswerButton> OnPress;
         public void Initialize(string answer)
         {
+            Reset();
             answerText.text = answer;
         }
 
@@ -49,6 +50,14 @@ namespace Gameplay.Quiz
         public void AnimateDisable(Action finishCallback = null)
         {
             disableAnimation.Play(() => finishCallback?.Invoke());
+        }
+
+        private void Reset()
+        {
+            correctAnimation.ResetToInitialState();
+            incorrectAnimation.ResetToInitialState();
+            enableAnimation.ResetToInitialState();
+            disableAnimation.ResetToInitialState();
         }
     }
 }

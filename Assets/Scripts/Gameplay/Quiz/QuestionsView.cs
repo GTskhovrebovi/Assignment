@@ -12,8 +12,8 @@ namespace Gameplay.Quiz
         [SerializeField] private TMP_Text question;
         [SerializeField] private List<AnswerButton> answerButtons;
 
-        [SerializeField] private AnimationSequence introAnimation;
-        [SerializeField] private AnimationSequence outroAnimation;
+        [SerializeField] private AnimationSequencerController startAnimation;
+        [SerializeField] private AnimationSequencerController endAnimation;
 
         private Dictionary<AnswerButton, AnswerData> _activeButtons = new();
         private Action<bool> _gameEndCallback;
@@ -42,7 +42,10 @@ namespace Gameplay.Quiz
         public void StartQuestion(Action<bool> gameEndCallback)
         {
             _gameEndCallback = gameEndCallback;
-            introAnimation.Play(EnableButtons);
+            
+            startAnimation.ResetToInitialState();
+            // startAnimation.reset
+            startAnimation.Play(EnableButtons);
         }
 
         private async void EnableButtons()
@@ -100,7 +103,7 @@ namespace Gameplay.Quiz
         private async UniTask AnimateOutro()
         {
             await UniTask.Delay(TimeSpan.FromSeconds(1));
-            outroAnimation.Play();
+            endAnimation.Play();
             foreach (var button in _activeButtons.Keys)
             {
                 button.AnimateDisable();

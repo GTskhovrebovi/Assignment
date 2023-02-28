@@ -1134,131 +1134,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &967876047
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 967876048}
-  - component: {fileID: 967876049}
-  m_Layer: 5
-  m_Name: Intro (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &967876048
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 967876047}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1114463015}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &967876049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 967876047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c10d422b52559da41aa9676770a8fc65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animationSteps:
-  - rid: 5263952132204396548
-  - rid: 5263952132204396550
-  updateType: 0
-  autoplayMode: 1
-  playType: 0
-  loopType: 0
-  timeScaleIndependent: 0
-  startPaused: 0
-  autoKill: 1
-  playbackSpeed: 1
-  loops: 0
-  onStartEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  onFinishedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  onProgressEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  progress: -1
-  references:
-    version: 2
-    RefIds:
-    - rid: 5263952132204396548
-      type: {class: TweenStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
-      data:
-        delay: 0
-        flowType: 0
-        target: {fileID: 1535446749}
-        duration: 0.4
-        actions:
-        - rid: 5263952132204396549
-        loopCount: 0
-        loopType: 0
-    - rid: 5263952132204396549
-      type: {class: AnchorPositionToPosition, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
-      data:
-        direction: 0
-        ease:
-          ease: 5
-          curve:
-            serializedVersion: 2
-            m_Curve: []
-            m_PreInfinity: 2
-            m_PostInfinity: 2
-            m_RotationOrder: 4
-        isRelative: 1
-        axisConstraint: 0
-        position: {x: 0, y: 100}
-    - rid: 5263952132204396550
-      type: {class: TweenStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
-      data:
-        delay: 0
-        flowType: 1
-        target: {fileID: 1535446749}
-        duration: 0.4
-        actions:
-        - rid: 5263952132204396551
-        loopCount: 0
-        loopType: 0
-    - rid: 5263952132204396551
-      type: {class: CanvasGroupAlpha, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
-      data:
-        direction: 0
-        ease:
-          ease: 5
-          curve:
-            serializedVersion: 2
-            m_Curve: []
-            m_PreInfinity: 2
-            m_PostInfinity: 2
-            m_RotationOrder: 4
-        isRelative: 0
-        alpha: 0
 --- !u!1 &979874863
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,7 +1150,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &979874864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1447,7 +1322,7 @@ GameObject:
   - component: {fileID: 1073722279}
   - component: {fileID: 1073722280}
   m_Layer: 5
-  m_Name: Intro
+  m_Name: Enable Animation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1486,17 +1361,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationSteps:
-  - rid: 5263952132204396548
-  - rid: 5263952132204396550
+  - rid: 5263952152949161998
+  - rid: 5263952152949162002
   updateType: 0
-  autoplayMode: 1
-  playType: 0
-  loopType: 0
   timeScaleIndependent: 0
+  autoplayMode: 2
   startPaused: 0
-  autoKill: 1
   playbackSpeed: 1
+  playType: 0
   loops: 0
+  loopType: 0
+  autoKill: 1
   onStartEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -1510,23 +1385,48 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 5263952132204396548
-      type: {class: TweenStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+    - rid: 5263952152949161998
+      type: {class: DOTweenAnimationStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
       data:
         delay: 0
         flowType: 0
         target: {fileID: 1535446749}
         duration: 0.4
-        actions:
-        - rid: 5263952132204396549
         loopCount: 0
         loopType: 0
-    - rid: 5263952132204396549
-      type: {class: AnchorPositionToPosition, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+        actions:
+        - rid: 5263952152949161999
+    - rid: 5263952152949161999
+      type: {class: FadeCanvasGroupDOTweenAction, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
       data:
         direction: 1
         ease:
-          ease: 27
+          ease: 7
+          curve:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+        isRelative: 0
+        alpha: 0
+    - rid: 5263952152949162002
+      type: {class: DOTweenAnimationStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+      data:
+        delay: 0
+        flowType: 1
+        target: {fileID: 1535446749}
+        duration: 0.4
+        loopCount: 0
+        loopType: 0
+        actions:
+        - rid: 5263952152949162003
+    - rid: 5263952152949162003
+      type: {class: AnchoredPositionMoveToPositionDOTweenActionBase, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+      data:
+        direction: 1
+        ease:
+          ease: 7
           curve:
             serializedVersion: 2
             m_Curve: []
@@ -1536,23 +1436,77 @@ MonoBehaviour:
         isRelative: 1
         axisConstraint: 0
         position: {x: 0, y: 100}
-    - rid: 5263952132204396550
-      type: {class: TweenStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+--- !u!1 &1102360238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1102360240}
+  - component: {fileID: 1102360239}
+  m_Layer: 5
+  m_Name: Disable Animation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1102360239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102360238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c10d422b52559da41aa9676770a8fc65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationSteps:
+  - rid: 5263952152949161998
+  - rid: 5263952152949162002
+  updateType: 0
+  timeScaleIndependent: 0
+  autoplayMode: 2
+  startPaused: 0
+  playbackSpeed: 1
+  playType: 0
+  loops: 0
+  loopType: 0
+  autoKill: 1
+  onStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onFinishedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onProgressEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  progress: -1
+  references:
+    version: 2
+    RefIds:
+    - rid: 5263952152949161998
+      type: {class: DOTweenAnimationStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
       data:
         delay: 0
-        flowType: 1
+        flowType: 0
         target: {fileID: 1535446749}
         duration: 0.4
-        actions:
-        - rid: 5263952132204396551
         loopCount: 0
         loopType: 0
-    - rid: 5263952132204396551
-      type: {class: CanvasGroupAlpha, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+        actions:
+        - rid: 5263952152949161999
+    - rid: 5263952152949161999
+      type: {class: FadeCanvasGroupDOTweenAction, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
       data:
-        direction: 1
+        direction: 0
         ease:
-          ease: 5
+          ease: 7
           curve:
             serializedVersion: 2
             m_Curve: []
@@ -1561,6 +1515,52 @@ MonoBehaviour:
             m_RotationOrder: 4
         isRelative: 0
         alpha: 0
+    - rid: 5263952152949162002
+      type: {class: DOTweenAnimationStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+      data:
+        delay: 0
+        flowType: 1
+        target: {fileID: 1535446749}
+        duration: 0.4
+        loopCount: 0
+        loopType: 0
+        actions:
+        - rid: 5263952152949162003
+    - rid: 5263952152949162003
+      type: {class: AnchoredPositionMoveToPositionDOTweenActionBase, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+      data:
+        direction: 0
+        ease:
+          ease: 7
+          curve:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+        isRelative: 1
+        axisConstraint: 0
+        position: {x: 0, y: 100}
+--- !u!224 &1102360240
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102360238}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1114463015}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1114463014
 GameObject:
   m_ObjectHideFlags: 0
@@ -1593,7 +1593,7 @@ RectTransform:
   - {fileID: 1535446750}
   - {fileID: 1597943751}
   - {fileID: 1073722279}
-  - {fileID: 967876048}
+  - {fileID: 1102360240}
   m_Father: {fileID: 448410298}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1620,8 +1620,8 @@ MonoBehaviour:
   - {fileID: 569454405}
   - {fileID: 2138744489}
   - {fileID: 401404029}
-  introAnimation: {fileID: 1073722280}
-  outroAnimation: {fileID: 967876049}
+  startAnimation: {fileID: 1073722280}
+  endAnimation: {fileID: 1102360239}
 --- !u!1 &1535446749
 GameObject:
   m_ObjectHideFlags: 0

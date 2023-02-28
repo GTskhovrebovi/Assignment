@@ -50,17 +50,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationSteps:
-  - rid: 5263952132204396544
-  - rid: 5263952132204396546
+  - rid: 5263952152949161984
+  - rid: 5263952152949161987
   updateType: 0
-  autoplayMode: 1
-  playType: 0
-  loopType: 0
   timeScaleIndependent: 0
+  autoplayMode: 2
   startPaused: 0
-  autoKill: 1
   playbackSpeed: 1
+  playType: 0
   loops: 0
+  loopType: 0
+  autoKill: 1
   onStartEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -74,23 +74,23 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 5263952132204396544
-      type: {class: TweenStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+    - rid: 5263952152949161984
+      type: {class: DOTweenAnimationStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
       data:
         delay: 0
         flowType: 0
         target: {fileID: 8168855208674534572}
         duration: 0.2
-        actions:
-        - rid: 5263952132204396545
         loopCount: 0
         loopType: 0
-    - rid: 5263952132204396545
-      type: {class: GraphicColor, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+        actions:
+        - rid: 5263952152949161986
+    - rid: 5263952152949161986
+      type: {class: ColorGraphicDOTween, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
       data:
         direction: 0
         ease:
-          ease: 2
+          ease: 7
           curve:
             serializedVersion: 2
             m_Curve: []
@@ -98,20 +98,20 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
         isRelative: 0
-        color: {r: 0, g: 1, b: 0.016950846, a: 1}
-    - rid: 5263952132204396546
-      type: {class: TweenStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+        color: {r: 0.032397628, g: 1, b: 0, a: 1}
+    - rid: 5263952152949161987
+      type: {class: DOTweenAnimationStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
       data:
         delay: 0
         flowType: 0
         target: {fileID: 752734375600521795}
         duration: 1
-        actions:
-        - rid: 5263952132204396547
         loopCount: 0
         loopType: 0
-    - rid: 5263952132204396547
-      type: {class: AnchorPositionToPosition, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+        actions:
+        - rid: 5263952152949161988
+    - rid: 5263952152949161988
+      type: {class: AnchoredPositionMoveToPositionDOTweenActionBase, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
       data:
         direction: 1
         ease:
@@ -251,17 +251,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationSteps:
-  - rid: 5263952077076561930
-  - rid: 5263952077076561933
+  - rid: 5263952152949161989
+  - rid: 5263952152949161991
   updateType: 0
-  autoplayMode: 1
-  playType: 0
-  loopType: 0
   timeScaleIndependent: 0
+  autoplayMode: 2
   startPaused: 0
-  autoKill: 1
   playbackSpeed: 1
+  playType: 0
   loops: 0
+  loopType: 0
+  autoKill: 1
   onStartEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -275,46 +275,19 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 5263952077076561930
-      type: {class: TweenStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+    - rid: 5263952152949161989
+      type: {class: DOTweenAnimationStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
       data:
         delay: 0
         flowType: 0
         target: {fileID: 3729025035143819503}
-        duration: 1
-        actions:
-        - rid: 5263952077076561932
+        duration: 0.2
         loopCount: 0
         loopType: 0
-    - rid: 5263952077076561932
-      type: {class: PunchScale, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
-      data:
-        direction: 0
-        ease:
-          ease: 7
-          curve:
-            serializedVersion: 2
-            m_Curve: []
-            m_PreInfinity: 2
-            m_PostInfinity: 2
-            m_RotationOrder: 4
-        isRelative: 0
-        punchMagnitude: {x: 0.2, y: 0.2, z: 0.2}
-        vibrato: 1
-        elasticity: 1
-    - rid: 5263952077076561933
-      type: {class: TweenStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
-      data:
-        delay: 0
-        flowType: 1
-        target: {fileID: 3729025035143819503}
-        duration: 1
         actions:
-        - rid: 5263952077076561934
-        loopCount: 0
-        loopType: 0
-    - rid: 5263952077076561934
-      type: {class: CanvasGroupAlpha, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+        - rid: 5263952152949161990
+    - rid: 5263952152949161990
+      type: {class: FadeCanvasGroupDOTweenAction, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
       data:
         direction: 1
         ease:
@@ -327,6 +300,33 @@ MonoBehaviour:
             m_RotationOrder: 4
         isRelative: 0
         alpha: 0
+    - rid: 5263952152949161991
+      type: {class: DOTweenAnimationStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+      data:
+        delay: 0
+        flowType: 1
+        target: {fileID: 3729025035143819503}
+        duration: 0.2
+        loopCount: 0
+        loopType: 0
+        actions:
+        - rid: 5263952152949161992
+    - rid: 5263952152949161992
+      type: {class: PunchScaleDOTweenAction, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+      data:
+        direction: 0
+        ease:
+          ease: 7
+          curve:
+            serializedVersion: 2
+            m_Curve: []
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+        isRelative: 0
+        punch: {x: 0.2, y: 0.2, z: 0.2}
+        vibrato: 1
+        elasticity: 1
 --- !u!1 &1334013372738109266
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,16 +377,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationSteps:
-  - rid: 5263952132204396544
+  - rid: 5263952152949161984
   updateType: 0
-  autoplayMode: 1
-  playType: 0
-  loopType: 0
   timeScaleIndependent: 0
+  autoplayMode: 2
   startPaused: 0
-  autoKill: 1
   playbackSpeed: 1
+  playType: 0
   loops: 0
+  loopType: 0
+  autoKill: 1
   onStartEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -400,23 +400,23 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 5263952132204396544
-      type: {class: TweenStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+    - rid: 5263952152949161984
+      type: {class: DOTweenAnimationStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
       data:
         delay: 0
         flowType: 0
         target: {fileID: 8168855208674534572}
         duration: 0.2
-        actions:
-        - rid: 5263952132204396545
         loopCount: 0
         loopType: 0
-    - rid: 5263952132204396545
-      type: {class: GraphicColor, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+        actions:
+        - rid: 5263952152949161986
+    - rid: 5263952152949161986
+      type: {class: ColorGraphicDOTween, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
       data:
         direction: 0
         ease:
-          ease: 2
+          ease: 7
           curve:
             serializedVersion: 2
             m_Curve: []
@@ -424,7 +424,7 @@ MonoBehaviour:
             m_PostInfinity: 2
             m_RotationOrder: 4
         isRelative: 0
-        color: {r: 1, g: 0, b: 0.03836775, a: 1}
+        color: {r: 1, g: 0, b: 0.2155757, a: 1}
 --- !u!1 &3729025035143819503
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,17 +796,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationSteps:
-  - rid: 5263952077076561930
-  - rid: 5263952077076561933
+  - rid: 5263952152949161993
+  - rid: 5263952152949161996
   updateType: 0
-  autoplayMode: 1
-  playType: 0
-  loopType: 0
   timeScaleIndependent: 0
+  autoplayMode: 2
   startPaused: 0
-  autoKill: 1
   playbackSpeed: 1
+  playType: 0
   loops: 0
+  loopType: 0
+  autoKill: 1
   onStartEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -820,30 +820,19 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 5263952077076561930
-      type: {class: TweenStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+    - rid: 5263952152949161993
+      type: {class: DOTweenAnimationStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
       data:
         delay: 0
         flowType: 0
         target: {fileID: 3729025035143819503}
         duration: 0.2
-        actions:
-        - rid: 5263952151464902656
         loopCount: 0
         loopType: 0
-    - rid: 5263952077076561933
-      type: {class: TweenStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
-      data:
-        delay: 0
-        flowType: 1
-        target: {fileID: 3729025035143819503}
-        duration: 0.2
         actions:
-        - rid: 5263952077076561934
-        loopCount: 0
-        loopType: 0
-    - rid: 5263952077076561934
-      type: {class: CanvasGroupAlpha, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+        - rid: 5263952152949161995
+    - rid: 5263952152949161995
+      type: {class: FadeCanvasGroupDOTweenAction, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
       data:
         direction: 0
         ease:
@@ -856,8 +845,19 @@ MonoBehaviour:
             m_RotationOrder: 4
         isRelative: 0
         alpha: 0
-    - rid: 5263952151464902656
-      type: {class: ScaleTransform, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+    - rid: 5263952152949161996
+      type: {class: DOTweenAnimationStep, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
+      data:
+        delay: 0
+        flowType: 1
+        target: {fileID: 3729025035143819503}
+        duration: 0.2
+        loopCount: 0
+        loopType: 0
+        actions:
+        - rid: 5263952152949161997
+    - rid: 5263952152949161997
+      type: {class: ScaleDOTweenAction, ns: BrunoMikoski.AnimationSequencer, asm: BrunoMikoski.AnimationSequencer}
       data:
         direction: 0
         ease:
