@@ -11,10 +11,12 @@ namespace Gameplay.Quiz
         [SerializeField] private int numberOfQuestions;
         [SerializeField] private GameObject startView;
         [SerializeField] private QuestionsView questionsView;
-        [SerializeField] private GameObject endView;
+        [SerializeField] private ResultView resultView;
+        [SerializeField] private GradeSystem gradeSystem;
 
-        private List<QuestionData> _currentGameQuestions = new ();
+        private List<QuestionData> _currentGameQuestions = new();
         private int _currentQuestionIndex;
+        private int _numberOfCorrectAnswers;
         
         private void Awake()
         {
@@ -25,6 +27,7 @@ namespace Gameplay.Quiz
         {
             StartGame();
             startView.gameObject.SetActive(false);
+            resultView.gameObject.SetActive(false);
         }
 
         private void StartGame()
@@ -33,6 +36,7 @@ namespace Gameplay.Quiz
             
             _currentGameQuestions = shuffledQuestions.Take(numberOfQuestions).ToList();
             _currentQuestionIndex = 0;
+            _numberOfCorrectAnswers = 0;
             
             questionsView.gameObject.SetActive(true);
             StartNextQuestion();
@@ -41,13 +45,14 @@ namespace Gameplay.Quiz
         private void StartNextQuestion()
         {
             questionsView.Initialize(_currentGameQuestions[_currentQuestionIndex]);
+            questionsView.SetProgressText(_currentQuestionIndex+1, _currentGameQuestions.Count);
             questionsView.StartQuestion(HandleQuestionEnd);
         }
         
         private void HandleQuestionEnd(bool hasWon)
         {
+            if (hasWon) _numberOfCorrectAnswers++;
             _currentQuestionIndex++;
-
             if (_currentQuestionIndex < _currentGameQuestions.Count)
             {
                 StartNextQuestion();
@@ -55,11 +60,10 @@ namespace Gameplay.Quiz
             else
             {
                 questionsView.gameObject.SetActive(false);
-                endView.gameObject.SetActive(true);
+                resultView.gameObject.SetActive(true);
+                var grade = gradeSystem.GetGrade(_numberOfCorrectAnswers, _currentGameQuestions.Count);
+                resultView.Initialize(grade.GradeName, grade.GradeColor, _numberOfCorrectAnswers, _currentGameQuestions.Count);
             }
         }
     }
-
-    
-
 }
