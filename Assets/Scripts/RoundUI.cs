@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class RoundUI : MonoBehaviour
 {
-    [SerializeField] private Sequencer revealSequencer;
-    [SerializeField] private Sequencer completeSequencer;
+    [SerializeField] private AnimationSequence revealSequencer;
+    [SerializeField] private AnimationSequence completeSequencer;
 
     public void Reveal()
     {
