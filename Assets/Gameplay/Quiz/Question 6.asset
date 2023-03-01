@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1acbe5bdb9d74b038bf7f4bf612174a0, type: 3}
   m_Name: Question 6
   m_EditorClassIdentifier: 
-  <QuestionText>k__BackingField: 4
+  <QuestionText>k__BackingField: The main goal of Pacman is to eat
   <Answers>k__BackingField:
-  - <AnswerText>k__BackingField: 1
-    <IsCorrect>k__BackingField: 0
-  - <AnswerText>k__BackingField: 2
-    <IsCorrect>k__BackingField: 0
-  - <AnswerText>k__BackingField: 3
-    <IsCorrect>k__BackingField: 0
-  - <AnswerText>k__BackingField: 4
+  - <AnswerText>k__BackingField: Dots
     <IsCorrect>k__BackingField: 1
+  - <AnswerText>k__BackingField: Sushi
+    <IsCorrect>k__BackingField: 0
+  - <AnswerText>k__BackingField: People
+    <IsCorrect>k__BackingField: 0
+  - <AnswerText>k__BackingField: Semicolons
+    <IsCorrect>k__BackingField: 0

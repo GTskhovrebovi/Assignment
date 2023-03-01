@@ -8,17 +8,17 @@ namespace Gameplay.Quiz
     [CreateAssetMenu(fileName = "Grade System", menuName = "Data/Grade System", order = 1)]
     public class GradeSystem : ScriptableObject
     {
-        [field: SerializeField] public List<Grade> Grades { get; private set; }
+        [SerializeField] private List<Grade> grades = new();
         
         public Grade GetGrade(int amount, int total)
         {
-            for (var i = Grades.Count-1; i >=0; i--)
+            for (var i = grades.Count-1; i >=0; i--)
             {
-                if (Grades[i].RequirementSatisfied(amount, total))
-                    return Grades[i];
+                if (grades[i].RequirementSatisfied(amount, total))
+                    return grades[i];
             }
             
-            return Grades.First();
+            return grades.First();
         }
     }
     
@@ -31,7 +31,6 @@ namespace Gameplay.Quiz
         
         public bool RequirementSatisfied(int amount, int total)
         {
-            var x = Mathf.CeilToInt(total * Requirement);
             return Mathf.CeilToInt(total * Requirement) <= amount;
         }
     }

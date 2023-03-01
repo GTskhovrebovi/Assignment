@@ -13,6 +13,7 @@ namespace Gameplay.Quiz
         [SerializeField] private TMP_Text question;
         [SerializeField] private List<AnswerButton> answerButtons;
 
+        [Header("Animations")]
         [SerializeField] private AnimationSequencerController startAnimation;
         [SerializeField] private AnimationSequencerController endAnimation;
 

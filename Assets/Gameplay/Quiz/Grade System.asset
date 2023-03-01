@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8171175135a54ae180d1787ad9a02ef8, type: 3}
   m_Name: Grade System
   m_EditorClassIdentifier: 
-  <Grades>k__BackingField:
+  grades:
   - <GradeName>k__BackingField: Terrible
     <GradeColor>k__BackingField: {r: 0.98823535, g: 0.227451, b: 0.2784314, a: 1}
     <Requirement>k__BackingField: 0
   - <GradeName>k__BackingField: Good Job
     <GradeColor>k__BackingField: {r: 0.9921569, g: 0.9450981, b: 0.25882354, a: 1}
-    <Requirement>k__BackingField: 0.2
+    <Requirement>k__BackingField: 0.4
   - <GradeName>k__BackingField: Great Job
     <GradeColor>k__BackingField: {r: 0.10588236, g: 0.9607844, b: 0.14117648, a: 1}
     <Requirement>k__BackingField: 1

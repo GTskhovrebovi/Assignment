@@ -7,12 +7,15 @@ namespace Gameplay.Quiz
 {
     public class QuizLevelManager : MonoBehaviour
     {
+        [Header("Game Settings")]
         [SerializeField] private List<QuestionData> questions;
         [SerializeField] private int numberOfQuestions;
+        [SerializeField] private GradeSystem gradeSystem;
+        
+        [Header("References")]
         [SerializeField] private GameObject startView;
         [SerializeField] private QuestionsView questionsView;
         [SerializeField] private ResultView resultView;
-        [SerializeField] private GradeSystem gradeSystem;
 
         private List<QuestionData> _currentGameQuestions = new();
         private int _currentQuestionIndex;

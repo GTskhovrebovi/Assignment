@@ -124,7 +124,7 @@ MonoBehaviour:
             m_RotationOrder: 4
         isRelative: 0
         axisConstraint: 0
-        position: {x: -450, y: 0}
+        position: {x: -600, y: 0}
 --- !u!1 &752734375600521795
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,7 +160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -23.064}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 449.8, y: 0}
+  m_AnchoredPosition: {x: 600, y: 0}
   m_SizeDelta: {x: 88.7, y: 294.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2446301587258731314
@@ -783,7 +783,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 62.95
+  m_fontSize: 100
   m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 1

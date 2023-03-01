@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace Gameplay.Quiz
 {
+    [Serializable]
     [CreateAssetMenu(fileName = "Question", menuName = "Data/Question Data", order = 1)]
     public class QuestionData : ScriptableObject
     {
